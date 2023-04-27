@@ -8,3 +8,5 @@ Instruções de execução:
     ./main.py -x <arquivo_entrada> [-o <arquivo_saida>]
 
 *Uma alternativa para executar o programa no Windows é utilizando o comando 'py main.py', usando os parâmetros no formato acima.
+
+- A especificação do problema está descrita no arquivo 'especificacao.txt'
