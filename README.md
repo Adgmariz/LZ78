@@ -1,4 +1,4 @@
-Instruções de execução:
+# Instruções de execução:
 - Abra um terminal e navegue até o diretório onde o arquivo main.py está localizado.
 - Torne o arquivo executável com o seguinte comando: 'chmod +x main.py' (Linux ou macOS)
 - Execute o programa de acordo com a especificação:
