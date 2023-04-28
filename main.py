@@ -11,6 +11,8 @@ def main():
         print("Parâmetros inválidos.")
     
     #Temp:
-    trie = Trie()
-    trie.adicionaCaractere('c')
+    trie = Trie(texto)
+    trie.comprimir()
+    for i in range(len(trie.dicionario)):
+        print(trie.dicionario[i])
 main()
