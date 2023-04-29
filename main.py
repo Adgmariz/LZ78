@@ -13,6 +13,6 @@ def main():
     #Temp:
     trie = Trie(texto)
     trie.comprimir()
-    for i in range(len(trie.dicionario)):
-        print(trie.dicionario[i])
+    with open('saida.txt', 'w') as saida:
+        saida.write(trie.comprimido)
 main()

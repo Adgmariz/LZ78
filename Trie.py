@@ -5,14 +5,14 @@ class Trie:
         self.index = 1
         self.texto = texto
         self.no_atual = self.raiz
-        self.dicionario = {0:"0"}
+        self.comprimido = ""
 
     def comprimir(self):
         for caractere in self.texto:
             filho = self.no_atual.getFilhoPorCaractere(caractere)
             if not filho:
                 self.no_atual.adiciona_filho(self.index,caractere)
-                self.dicionario[self.index] = str(self.no_atual.index) + caractere
+                self.comprimido += str(self.no_atual.index) + caractere
                 self.index += 1
                 self.no_atual = self.raiz
             else:
