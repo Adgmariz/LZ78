@@ -18,7 +18,6 @@ class Trie:
                 binario = np.zeros(1, dtype=np.uint32)
                 binario[0] |= (self.no_atual.index << 8)
                 binario[0] |= (ord(caractere))
-                #print(binario[0])
                 self.tokens = np.append(self.tokens,binario[0])
                 self.index += 1
                 self.no_atual = self.raiz
@@ -27,9 +26,11 @@ class Trie:
     def descomprimir(self):
         resultado = ""
         for token in self.tokens:
-            index = token >> 8
-            # '>> 8' para pegar apenas os primeiros 24bits
+            token = int.from_bytes(token)
+            print(token)
             caractere = chr(token & 255)
             # '&255' para pegar apenas os últimos 8bits
+            index = token >> 8
+            # '>> 8' para pegar apenas os primeiros 24bits
             resultado += str(index) + caractere
-        print(resultado)
+        return resultado
