@@ -9,7 +9,8 @@
 
 *Uma alternativa para executar o programa no Windows é utilizando o comando 'py main.py', usando os parâmetros no formato acima.
 
-# --------------
+
+
 # Especificação:
 UNIVERSIDADE FEDERAL DE MINAS GERAIS
 Instituto de Ciências Exatas
